@@ -1,0 +1,5 @@
+%dw 2.0
+
+type auto_204e4939_ad67_4c18_b202_c70753bbdd55_Input_Payload = Array<{|  ID: Number,   code: String,   price: Number,   departureDate: String,   origin: String,   destination: String,   emptySeats: Number,   plane: {|    "type": String,     totalSeats: Number  |}|}> {"mediaType": "application/json",
+"encoding": "UTF-8"}
+
