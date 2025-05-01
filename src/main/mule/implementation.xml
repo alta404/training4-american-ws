@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="c14b4cf0-ada8-438e-aef0-22e6deb27907" >
-		<db:my-sql-connection host="iltdb.mule-training.com" port="3306" user="mule" password="mule" database="training" />
+		<db:my-sql-connection host="iltdb.mule-training.com" port="3306" user="mule" password="${DB_PASSWORD}" database="training" />
 	</db:config>
 	<flow name="getFlights" doc:id="204e4939-ad67-4c18-b202-c70753bbdd55" >
 		<http:listener doc:name="GET /flights" doc:id="c1e8e6ae-952d-498b-b9de-162f5933cef0" config-ref="American_Listener_config" path="/flights"/>
